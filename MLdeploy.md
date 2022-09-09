@@ -22,4 +22,4 @@ This document was generated through a process of researching ML Deployment techn
 4. Look for solutions that help you to deploy faster and perform continuous updates. --> Time pases, your data gets outdated. so your model.
 
 ## Recommended Architecture Diagram to Implement
-
+![Architecture 1](https://dissertationfco.blob.core.windows.net/dissfco/1stArchitecture.png)

@@ -5,7 +5,7 @@ This document was generated through a process of researching ML Deployment techn
 ## Why is this relevant
 1.	Quickly deploy a Machine Learning Model using Open-Source solutions.
 2.	Manage the model versioning, governance, and traceability of the process.
-3.	Be cost-efficient with the deployment system.
+3.	Auto-scalability, to ensure cost and performance efficiency of the system.
 4.	Be able to deploy models using similar technologies used in the building and training stages.
 5.	Automate manual processes to leave more time for Data Science, and less for configuration and scalability of the platform.
 
@@ -22,7 +22,15 @@ This document was generated through a process of researching ML Deployment techn
 4. Look for solutions that help you to deploy faster and perform continuous updates. --> Time pases, your data gets outdated. so your model.
 
 ## Recommended Architecture Diagram to Implement
+### Description of the system
+The system, is an implementation of Seldon Core, that uses Kubernetes as the main platform to maintain all the services needed to deploy a machine learning model. Kubernetes hosts and orchestrates Seldon Core, Istio, and the models that Seldon will be in charge of deploying.
+This solution will allow Data Scientist to deploy........................ACAAAAAAAAAAAAAAAAAAAA
+Orchestrate, Be robust against app crashes, scale up and down containers, making easy to scale the node up and down by adding new nodes to the system.
+
+### Diagram Figure
 ![Architecture 1](https://dissertationfco.blob.core.windows.net/dissfco/1stArchitecture.png)
+
+### Table of the technologies displayed in the architecture diagram
 
 | Technology | Use case |
 | --- | --- |
@@ -32,5 +40,5 @@ This document was generated through a process of researching ML Deployment techn
 | Seldon Core | Is the deployment solution for ML Models, that also is deployed inside Kubernetes. |
 | Istio | Istio is the service mesh that is in charge of connecting services with other services or ingress/egress endpoints. |
 | Istioctl | Istioctl is a command-line interface to manage the Istio installation inside a Kubernetes platform. |
-| Helm | hola |
+| Helm | Helm is a solution to automate and facilitate deployments in Kubernetes. |
 | Lens (optional) | User interface used to monitor and debug deployments/pods in Kubernetes. |

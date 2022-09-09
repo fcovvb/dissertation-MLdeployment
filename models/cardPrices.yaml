@@ -3,12 +3,12 @@ kind: SeldonDeployment
 metadata:
   name: sklearn
 spec:
-  name: iris
+  name: cardPrices
   predictors:
   - graph:
       children: []
       implementation: SKLEARN_SERVER
-      modelUri: gs://seldon-models/v1.15.0-dev/sklearn/iris
+      modelUri: https://dissertationfco.blob.core.windows.net/dissfco/model.joblib
       name: classifier
     name: default
     replicas: 1

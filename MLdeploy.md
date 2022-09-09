@@ -23,3 +23,14 @@ This document was generated through a process of researching ML Deployment techn
 
 ## Recommended Architecture Diagram to Implement
 ![Architecture 1](https://dissertationfco.blob.core.windows.net/dissfco/1stArchitecture.png)
+
+| Technology | Use case |
+| --- | --- |
+| Kubernetes | Platform used to deploy and orchestrate ML Models, Istio, and Seldon Core. |
+| Kubectl | Kubectl is a command-line interface installed locally in the cluster administrator’s computer to manage Kubernetes and define Deployment Manifests. |
+| Cloud Storage | We will be using a Cloud Storage as a repository for Model Binaries (e.g., TensorFlow, Scikit Learn, Pytorch), so Seldon Core can access them when deploying the service. |
+| Seldon Core | Is the deployment solution for ML Models, that also is deployed inside Kubernetes. |
+| Istio | Istio is the service mesh that is in charge of connecting services with other services or ingress/egress endpoints. |
+| Istioctl | Istioctl is a command-line interface to manage the Istio installation inside a Kubernetes platform. |
+| Helm | hola |
+| Lens (optional) | User interface used to monitor and debug deployments/pods in Kubernetes. |

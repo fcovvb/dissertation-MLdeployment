@@ -28,7 +28,7 @@ This solution will allow Data Scientist to deploy........................ACAAAAA
 Orchestrate, Be robust against app crashes, scale up and down containers, making easy to scale the node up and down by adding new nodes to the system.
 
 ### Diagram Figure
-![Architecture 1](https://dissertationfco.blob.core.windows.net/dissfco/1stArchitecture.png)
+![Architecture 1](https://dissertationfco.blob.core.windows.net/dissfco/1stArchitecture.png?)
 
 ### Table of the technologies displayed in the architecture diagram
 

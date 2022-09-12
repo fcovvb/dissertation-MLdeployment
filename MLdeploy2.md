@@ -1,4 +1,4 @@
-# A Set of Practicess and Architectures for ML Deployments for Small and Medium Companies (SMBs)
+# A Set of Practices and Architectures for ML Deployments for Small and Medium Companies (SMBs)
 ## Disclaimer
 This document was generated through a process of researching ML Deployment technologies (API-Server, Docker, Kubernetes, Apache Spark, Seldon Core, Kubeflow, and MLFlow) and experimentation deploying some of the already mentioned solutions. The entire process was designed and performed by one person, and many other technologies were not considered for this experiment because the limited amount of time and knowledge needed to explore more alternative.
 

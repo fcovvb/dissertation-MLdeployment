@@ -1,11 +1,11 @@
-# A Set of Practicess and Architectures for ML Deployments for Small and Medium Companies (SMBs)
+# A Set of Practices and Architectures for ML Deployments for Small and Medium Companies (SMBs)
 ## Disclaimer
 This document was generated through a process of researching ML Deployment technologies (API-Server, Docker, Kubernetes, Apache Spark, Seldon Core, Kubeflow, and MLFlow) and experimentation deploying some of the already mentioned solutions. The entire process was designed and performed by one person, and many other technologies were not considered for this experiment because the limited amount of time and knowledge needed to explore more alternative.
 
 ## SMBs Specific Challenges - Why this document focus on SMBs?
 1. SMBs have limited financial resources.
 2. SMBs have difficulties acquiring and retaining digital talent.
-3. 3rd Party Propietary Softwares/Solutions can generate a Lock-in and, in many cases, the knowledge acquired to use one service is not transferable to other services.
+3. 3rd Party Proprietary Software/Solutions can generate a Lock-in and, in many cases, the knowledge acquired to use one service is not transferable to other services.
 
 ## How this could help
 1.	Quickly deploy a Machine Learning Model using Open-Source solutions.
@@ -15,18 +15,18 @@ This document was generated through a process of researching ML Deployment techn
 5.	Automate manual processes to leave more time for Data Science, and less for configuration and scalability of the platform.
 6. Maintain a cost-efficient platform, which can adapt to the business’s needs.
 
-## Best Practicess
+## Best Practices
 1. The system should have a model repository, that allows Accessing and Versioning them. --> This will allow the business to compare models and choose which one to deploy depending on a desired 
-   metric(e.g., r2, F1, accuracy, etc.)/performance(e.g, time to process).
+   metric(e.g., r2, F1, accuracy, etc.)/performance(e.g., time to process).
 2. Have a system with Traceability capabilities, where the company can trace a prediction back to the model and data that generated it. --> To take actions in case of errors or black box 
    problems (Newell and Marabelli, 2015).
 3. Monitor Models in Testing and Production environments. --> These could lead your system to not to attend all the requests made to the platform by users or other systems (John, Olsson, and Bosch, 2021).
-4. Look for solutions that help teams to deploy faster and perform continuous updates. --> Time pases, data gets outdated. so our models.
+4. Look for solutions that help teams to deploy faster and perform continuous updates. --> Time passes, data gets outdated. so do our models.
 
 ## Recommended Architecture Diagram to Implement
 ### Description of the system
-The system, is an implementation of Seldon Core, that uses Kubernetes as the main platform to maintain all the services needed to deploy a (or multiple) machine learning model. Kubernetes hosts and orchestrates Seldon Core, Istio, and the models that Seldon will be in charge of deploying.
-This solution will allow Data Scientist to deploy Machine Learning Models without needing to have knowledge about web servers, docker or other deployment framework. The system is designed so Data Scientists can write their models using Python, TensorFlow, Pytorch, SKLearn, MLFlow libraries, and Seldon Core will generate a container wrapping the model in a web server to deploy it to Kubernetes, so Data Scientists do not need to do so. With this approach, businesses can leverage their work leaving Kubernetes the tasks of orchestrating and scaling up/down the services to optimize the use of infrastructure, and be robust against app crashes.
+The system is an implementation of Seldon Core, that uses Kubernetes as the main platform to maintain all the services needed to deploy a (or multiple) machine learning model. Kubernetes hosts and orchestrates Seldon Core, Istio, and the models that Seldon will be in charge of deploying.
+This solution will allow Data Scientist to deploy Machine Learning Models without needing to have knowledge about web servers, docker or other deployment framework. The system is designed so Data Scientists can write their models using Python, TensorFlow, Pytorch, SKLearn, MLFlow libraries, and Seldon Core will generate a container wrapping the model in a web server to deploy it to Kubernetes, so Data Scientists do not need to do so. With this approach, businesses can leverage their work leaving Kubernetes the tasks of orchestrating and scaling up/down the services to optimize the use of infrastructure and be robust against app crashes.
 
 ### Diagram Figure
 ![Architecture 1](https://dissertationfco.blob.core.windows.net/dissfco/1stArchitecture.png?)
